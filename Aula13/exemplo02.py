@@ -7,10 +7,11 @@ for i in range(3):
         A[i, j] = float(input(f"A[{i+1},{j+1}]: "))
 
 det = np.linalg.det(A)
+fator = abs(det)
 
 print("Matriz A:", A)
 print(f"Determinante: {det:.4f}")
-print(f"Fator de volume: {abs(det):.4f}")
+print(f"Fator de volume: {fator:.4f}")
 
 if np.isclose(det, 0):  
     print("A transformação anula o volume.")
